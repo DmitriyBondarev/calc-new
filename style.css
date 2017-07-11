@@ -1,0 +1,255 @@
+/* ------------------------- MainPage ---------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+h1{
+	display: inline;
+    font: 32px Arial;
+    font-variant: inherit;
+	margin:10px;
+	vertical-align:50px;
+}
+nav {
+	font: 23px  Microsoft JhengHei Light;
+}
+body{
+	background-color: #2f4551;
+}
+header, .main, footer{
+	background-color: #7a5252;
+	border: solid white 1px;
+	border-radius: 10px;
+	width: 850px;
+	margin:auto;
+	padding:5px;
+	list-style-type:none;
+}
+.menu li {
+	display: inline;
+}
+.submenu {
+    position: absolute;
+    display: none;
+    margin-left: 57px;
+    margin-top: -1px;
+}
+li:hover ul { 
+    display: block;
+    z-index: 1000;
+	background:white;
+	border:solid black 2px;
+	border-radius:10px;
+	width:68px;
+	text-align:left;
+	padding:5px;
+   }
+.main {
+	font: 16px Arial;
+	text-align: center;
+	list-style-type:none;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+footer {
+	text-align:center;
+	font: 16px Times new roman, Georgia;
+}
+address a{
+	font: italic 16px Times new roman;
+}
+/* ------------------------- Web-technologies ---------------------*/
+.ulweb {
+	margin-left:40px;
+}
+dd {
+	margin-left:40px;
+}
+/* ------------------------- HTML ---------------------------------*/
+aside {
+	border:1px solid rgb(220,220,220);
+	border-radius:10px;
+	background:rgb(220,220,220);
+	padding:10px;
+	margin:10px;
+	float:right;
+	width:250px;
+	font:14px Times new roman;
+}
+h3 {
+	margin: 15px 0 15px 0;
+	font-size:18px;
+}
+h2 {
+	margin-bottom:15px;
+}
+.gotop {
+	margin-left:0;
+	font:17px Arial;
+}
+/* ------------------------- JS ---------------------------------*/
+/* ok */
+/* ------------------------- Calc -------------------------------*/
+
+table {
+	margin: 0 auto;
+	padding: 0;
+	border:0px solid blue;
+	border-collapse:collapse;
+}
+#CalcDisp {
+	width:306px;
+	height:60px;
+	margin:1px;
+	margin-bottom:12px;
+	text-align:right;
+    font-size: 25px;
+    font: 30px Arial;
+    line-height: 140%;
+    background-color: white;
+    padding: 0;
+    text-decoration-color: black;
+}
+button {
+	width:60px;
+	height:28px;
+	margin:1px 1px 4px 1px;
+	border: 0px solid rgb(160, 160, 160);
+	border-radius:0    px;
+	font-size:16px;
+}
+td {
+    border: none;
+}
+button:hover {
+	background-color: rgb(190, 215, 248);
+}
+td :focus {
+	/*font-size:14px;*/
+	/*color: rgb(76, 130, 190);*/
+}
+#zero, #mPlus {
+	width:122px;
+}
+#result {
+	height:62px;
+}
+/* ------------------------- Test -------------------------------*/
+#resTest {
+	width:78px;
+/*-------------------------- Memories: -------------------------------*/
+}
+.digits {
+    background-color: lightblue;
+}
+.digits:hover {
+    background-color: aliceblue;
+}
+.memoGroup {
+    background-color: cornsilk;
+    font-size: 13px;
+}
+#mClean, #rst {
+    color: lightcoral;
+}
+#mClean:hover, #rst:hover {
+    background-color: #9e6666;
+}
+#tdInput {
+    position: relative;
+    padding: 0;
+}
+#mIndicator {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 10px;
+}
+#sqrtIndicator {
+    position: absolute;
+    top: 45px;
+    left: 4px;
+    font-size: 10px;
+}
+#expIndicator {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    font-size: 12px;
+}
+#message {
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    font-size: 12px;
+}
+#formCalc {
+    width: 36%;
+    /*background-color: rgb(70, 140, 170, 200);*/
+    background-color: #547688;
+    /*opacity: 0.5;*/
+    border-radius: 5px;
+    padding: 20px;
+    padding-right: 9px;
+    padding-left: 3px;
+    padding-top: 3px;
+    margin: auto;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .3),   -30px 0 20px -23px rgba(0, 0, 0, .4),   30px 0 20px -23px rgba(0, 0, 0, .4),   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+#buttInfo {
+    float: left;
+    position: absolute;
+    bottom: 240px;
+    left: 589px;
+    width: 25px;
+    height: 17px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .3),   -40px 0 30px -23px rgba(0, 0, 0, .4),   30px 0 20px -23px rgba(0, 0, 0, .4),   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+#buttInfo:hover{
+    background-color:chocolate ;
+}
+@keyframes fall {
+   to  { transform-origin: 90% 0;  transform: rotate(-45deg);}
+   
+}
+@keyframes fall3 {
+   to  { transform-origin: 90% 0;  transform: rotate(-8deg);}
+   
+}
+@keyframes fall2 {
+    to{ transform: translateY(200%);}  
+    to{ transform-origin: 0 100%;  
+        transform: rotate(40, 0);
+    }
+   
+}
+
+/*#formCalc {
+    animation: fall 0.5s ease-in 0s;  
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}*/
+
+/*#zero {
+    animation: fall 2s ease-in 0s;  
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}*/
+/*.crashEffect{
+    animation: fall2 3s ease-in 0s;  
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}*/
+
+.text {
+    font-family: serif;
+    font-style: normal;
+    font: 14px Microsoft JhengHei Light;
+}
+#buttInfo {
+
+    
+}

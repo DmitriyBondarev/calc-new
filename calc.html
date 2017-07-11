@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	  <title>Калькулятор</title>
+	  <meta charset="utf-8" />	 
+	  <link rel="stylesheet" href="style.css" />
+	  <style id="style1"></style>
+	  <style id="style2"></style>
+	  <style id="style3"></style>
+	  <style id="style4"></style>
+	</head>
+	<body id="body">
+		<header>
+			<img src="webLogo.png" alt="Логотип" width="220" />
+			<h1>Основы Web-технологий</h1>
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html" class="text">Главная</a></li>
+					<li><a href="web-tech.html" class="text">Web-технологии</a>
+						<ul class="submenu">
+							<li class="text"><a href="html5.html">HTML5</a></li>
+							<li class="text"><a href="css3.html">CSS3</a></li>
+							<li class="text"><a href="javascript.html">JavaScript</a></li>
+						</ul>
+					</li>
+					<li class="text"><a href="calc.html">Калькулятор</a></li>
+					<li class="text"><a href="test.html">Тест</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="main">
+			<div id="formCalc">
+				<form name="Calculator" autocomplete="off">
+					<table>
+						<tr>
+							<td colspan="5" id = "tdInput">
+								<p id = "mIndicator"></p>
+								<p id = "sqrtIndicator"></p>
+								<p id = "expIndicator"></p>
+								<p id = "message"></p>
+								<input id="CalcDisp" type="text" value="" placeholder="0" disabled />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><button id="mPlus" class="memoGroup zeroDivAnimation" type="button">M+</button></td>
+							<td><button id="mMinus" class="memoGroup" type="button">M-</button></td>
+							<td><button id="mRes" class="memoGroup" type="button">MR</button></td>
+							<td><button id="mClean" class="memoGroup" type="button">MC</button></td>
+						</tr>
+						<tr>
+							<td><button id="del" class="memoGroup crashEffect" type="button">◀</button></td>
+							<td><button id="sqrt" class="memoGroup" type="button">&#8730;</button></td>
+							<td><button id="exp" class="memoGroup" type="button"><i><b>x</b><sup>y</sup></i></button></td>
+							<td><button id="percent" class="memoGroup" type="button">%</button></td>
+							<td><button id="pi" class="memoGroup" type="button">&#960;</button></td>
+						</tr>							
+						<tr>
+							<td><button id="b7" class="digits crashEffect" type="button">7</button></td>
+							<td><button id="b8" class="digits" type="button">8</button></td>
+							<td><button id="b9" class="digits" type="button">9</button></td>
+							<td><button id="dvd" type="button">/</button></td>
+							<td><button id="rst" type="button">C</button></td>
+						</tr>
+						<tr>
+							<td><button id="b4" class="digits crashEffect" type="button">4</button></td>
+							<td><button id="b5" class="digits" type="button">5</button></td>
+							<td><button id="b6" class="digits" type="button">6</button></td>
+							<td><button id="mltpl" type="button">*</button></td>
+							<td><button id="negtv" type="button">&#177;</button></td>
+						</tr>
+						<tr>
+							<td><button id="b1" class="digits crashEffect" type="button">1</button></td>
+							<td><button id="b2" class="digits" type="button">2</button></td>
+							<td><button id="b3" class="digits" type="button">3</button></td>
+							<td><button id="min" type="button">-</button></td>
+							<td rowspan="2"><button id="result" type="button">=</button></td>
+						</tr>
+						<tr>
+							<td colspan="2"><button id="zero" class="digits" type="button">0</button>
+							<td><button id="point" class="digits" type="button">.</button></td>
+							<td><button id="pls" type="button">+</button></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<img id="buttInfo" src="images\labe5.png"/>
+			</div>
+
+
+		</main>
+		<footer>
+			<address>
+				<p ><a class="text" href="mailto:mail_dim@ukr.net">mail_dim@ukr.net</a></p>
+			</address>
+			<p class="text">&copy; Бондарев Д.Я. 2016</p>
+		</footer>	
+<script src="scriptCalc.js"></script>
+   </body>
+</html>
